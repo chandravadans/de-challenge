@@ -3,15 +3,13 @@ package com.data.challenge.edgar;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.List;
-import java.util.stream.Collectors;
 
 public class Main {
     public static void main(String[] args) throws Exception {
         System.out.println("Contents of input file: ");
 
         Files.lines(Paths.get(args[0])).forEach(System.out::println);
-        List<String> lines = Files.lines(Paths.get(args[0])).collect(Collectors.toList());
-
+        List<String> lines = Files.readAllLines(Paths.get(args[0]));
 
         System.out.println("Inactivity period : " + Files.lines(Paths.get(args[1]))
                 .mapToInt(Integer::parseInt)
