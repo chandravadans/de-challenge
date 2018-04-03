@@ -45,9 +45,6 @@ function setup_testing_input_output {
   mkdir -p ${TEST_OUTPUT_PATH}
 
   cp -r ${PROJECT_PATH}/src ${TEST_OUTPUT_PATH}
-  cp -r ${PROJECT_PATH}/.mvn ${TEST_OUTPUT_PATH}
-  cp -r ${PROJECT_PATH}/mvn* ${TEST_OUTPUT_PATH}
-  cp -r ${PROJECT_PATH}/pom.xml ${TEST_OUTPUT_PATH}
   cp -r ${PROJECT_PATH}/run.sh ${TEST_OUTPUT_PATH}
   cp -r ${PROJECT_PATH}/input ${TEST_OUTPUT_PATH}
   cp -r ${PROJECT_PATH}/output ${TEST_OUTPUT_PATH}
